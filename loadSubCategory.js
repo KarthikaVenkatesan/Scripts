@@ -3,7 +3,7 @@ function onChange(control, oldValue, newValue, isLoading) {
         return;
     }
 	
-	 var ga = new GlideAjax('CategoryHelperAjax1');
+	 var ga = new GlideAjax('CategoryHelperAjax');
    ga.addParam('sysparm_name','getSubcategories');
 	ga.addParam('sysparm_category', g_form.getValue('category'));
    ga.getXML(ajaxProcessor);   
